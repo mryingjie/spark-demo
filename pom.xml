@@ -24,7 +24,7 @@
             <artifactId>spark-core_2.11</artifactId>
             <version>2.1.1</version>
             <!--该jar包不被打包-->
-            <scope>provided</scope>
+            <!--<scope>provided</scope>-->
         </dependency>
     </dependencies>
 

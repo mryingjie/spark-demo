@@ -1,4 +1,4 @@
-package com.demo.spark
+package com.demo.spark.core
 
 import org.apache.spark.{SparkConf, SparkContext}
 
@@ -19,7 +19,7 @@ object WordCount {
     //读取数据 统计
     val words = context.textFile("RELEASE")
 
-    val res = words.flatMap(_.split(" ")).map((_,1)).reduceByKey(_+_).collect()
+    val res = words.flatMap(x =>x.split(" ")).map((_,1)).reduceByKey(_+_).collect()
 
     res.foreach(println _)
 
