@@ -10,7 +10,7 @@
     <modules>
         <module>spark-core</module>
         <module>spark-sql</module>
-        <module>spark-streamng</module>
+        <module>spark-streaming</module>
     </modules>
     <packaging>pom</packaging>
 
