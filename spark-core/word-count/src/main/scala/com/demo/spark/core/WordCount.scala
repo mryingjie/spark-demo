@@ -11,7 +11,7 @@ object WordCount {
 
     //新建sparkConf对象
     val conf = new SparkConf().setAppName("wordCount")
-//      .setMaster("local[*]")
+      .setMaster("local[*]")
 
     //创建sparkContext
     val context = new SparkContext(conf)

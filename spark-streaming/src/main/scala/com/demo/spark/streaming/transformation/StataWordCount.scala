@@ -43,7 +43,7 @@ object WordCount2 {
     val updateFunc = (values:Seq[Int],state:Option[Int])=> {
       Some(state.getOrElse(0)+values.sum)
     }
-    val result =kvDStream
+    val result =kvDStream.updateStateByKey[Int](updateFunc)
     result.print()
 
     ssc.start()
