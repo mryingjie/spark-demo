@@ -71,9 +71,9 @@ object StreamingKafka {
 
 //    创建连接到zookeeper查看收存在数据保存
     var textKafkaDStream:InputDStream[(String,String)] = null
-    val topicDirs = new ZKGroupTopicDirs(groupid,sourceTopic);
+    val topicDirs = new ZKGroupTopicDirs(groupid,sourceTopic)
     val zkTopicPath = topicDirs.consumerOffsetDir
-    val zkClient = new ZkClient(zookeeperAddr);
+    val zkClient = new ZkClient(zookeeperAddr)
 
     val countChildren = zkClient.countChildren(zkTopicPath)
 
@@ -83,7 +83,7 @@ object StreamingKafka {
       var fromOffsets:Map[TopicAndPartition,Long] = Map()
 
       //获取kafka集群的元信息
-      val topicList  = List(sourceTopic)
+      val topicList  = sourceTopic.split(",").toList
 
       //创建一个连接
       val getLeaderConsumer = new SimpleConsumer("192.168.42.132",9092,100000,10000,"OffsetLookUp")

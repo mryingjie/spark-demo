@@ -80,7 +80,7 @@ class Client {
     val res = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
       .combineByKey(
         (v:Int) => (v,1),
-        (x:(Int,Int),y:Int) =>(x._1+y,x._2+1),
+        (c:(Int,Int),v:Int) =>(c._1+v,c._2+1),
         (a:(Int,Int),b:(Int,Int)) => (a._1+b._1,a._2+b._2)
       ).map{
       x => x match {
@@ -227,7 +227,7 @@ class Client {
   @Test
   def testRepartitionAndSortWithinPartitions(): Unit ={
     val res = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
-//      .repartitionAndSortWithinPartitions()
+      .repartitionAndSortWithinPartitions(new HashPartitioner(2))
   }
 
   /**

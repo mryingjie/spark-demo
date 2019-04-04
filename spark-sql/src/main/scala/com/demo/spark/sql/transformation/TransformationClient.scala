@@ -53,7 +53,8 @@ class TransformationClient {
     val fields = schemaStr.split(",")
       .map(fieldName =>StructField(fieldName,StringType,nullable = true))
     val schema = StructType(fields)
-    val rowRdd = rdd.map(_.split(",")).map(attr=>Row(attr(0).trim,attr(1).trim))
+    val rowRdd = rdd.map(_.split(","))
+      .map(attr=>Row(attr(0).trim,attr(1).trim))
     val df = spark.createDataFrame(rowRdd,schema)
 
     //DataFrame==>RDD

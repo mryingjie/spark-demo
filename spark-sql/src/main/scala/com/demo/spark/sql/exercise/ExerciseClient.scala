@@ -1,5 +1,6 @@
 package com.demo.spark.sql.exercise
 
+import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.{Row, SparkSession}
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
@@ -19,7 +20,7 @@ class ExerciseClient {
 
   @Test
   def testClient(): Unit ={
-    val rddTbData = sc.textFile("E:\\demo\\spark-demo\\spark-sql\\src\\main\\resources\\doc\\tbDate.txt")
+    val rddTbData: RDD[(String, String, String, String, String, String, String, String, String, String)] = sc.textFile("E:\\demo\\spark-demo\\spark-sql\\src\\main\\resources\\doc\\tbDate.txt")
       .map(item => {
         val items = item.split(",")
         var res:Tuple10[String,String,String,String,String,String,String,String,String,String] =null

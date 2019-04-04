@@ -26,7 +26,7 @@ class AccuClient {
     val broadcast = context.broadcast(Array(1,2,3,4,5))
     rdd.map{
       x => {
-        broadcast .value
+        val value = broadcast .value
         sum.add(x)
         accu.add(x+"")
         x

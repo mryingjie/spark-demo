@@ -1,7 +1,7 @@
 package com.demo.spark.sql.udf
 
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.sql.{Row, SparkSession}
+import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 import org.apache.spark.sql.expressions.{MutableAggregationBuffer, UserDefinedAggregateFunction}
 import org.apache.spark.sql.types._
 import org.junit._
@@ -16,7 +16,6 @@ class UDFClient extends Serializable {
   val sc: SparkContext = spark.sparkContext
 
   import spark.implicits._
-
   /**
     * {"name":"张三","age":18,"salary":1993.9}
     * {"name":"李四","age":23,"salary":2132.8}
@@ -82,7 +81,7 @@ class UDFClient extends Serializable {
     */
   @Test
   def testUDAF3(): Unit ={
-    val employeeDF = spark.read.json("E:\\demo\\spark-demo\\spark-sql\\src\\main\\resources\\doc\\emoloyee.json")
+    val employeeDF: DataFrame = spark.read.json("E:\\demo\\spark-demo\\spark-sql\\src\\main\\resources\\doc\\emoloyee.json")
 
     employeeDF.createOrReplaceTempView("employee")
 

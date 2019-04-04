@@ -16,7 +16,7 @@ object WordCount {
     val ssc = new StreamingContext(conf,Seconds(2))
 
 //    创建一个接收器来接受数据
-    val linesDstream = ssc.socketTextStream("192.168.42.132",port=9999)
+    val linesDstream = ssc.socketTextStream("localhost",port=9999)
 
     val wordDStream = linesDstream.flatMap(_.split(" "))
 
@@ -31,7 +31,6 @@ object WordCount {
     ssc.start()
     println("服务启动成功！！！")
     ssc.awaitTermination()
-
   }
 
 }
