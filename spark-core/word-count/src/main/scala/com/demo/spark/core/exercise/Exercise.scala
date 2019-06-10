@@ -37,11 +37,11 @@ class Exercise {
         line => {
           val strings = line.split(" ")
 //          val hour = new DateTime(1516609241720L).getHourOfDay
-          val hour = Instant.ofEpochMilli(strings(0).toLong)
+          val hour: Int = Instant.ofEpochMilli(strings(0).toLong)
             .atZone(ZoneId.of("Asia/Shanghai"))
             .toLocalTime
             .getHour
-          ((strings(1) + ":" + hour + ":" + strings(4)), 1)
+          (strings(1) + ":" + hour + ":" + strings(4), 1)
         }
       }.reduceByKey(_ + _) //（省份：小时数：广告id，点击数）
       //放大粒度(省份:小时数,List((广告id，点击数),(广告id，点击数)))

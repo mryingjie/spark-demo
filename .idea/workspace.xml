@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee782761-1206-471d-9073-e811fe6ebd39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/cdn.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/WordCount$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/WordCount$$anonfun$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/WordCount$$anonfun$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/WordCount$$anonfun$main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/WordCount$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/WordCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/accumulator/AccuClient$$anonfun$testNoAccu$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/accumulator/AccuClient$$anonfun$testWithAccu$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/accumulator/AccuClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/accumulator/CustomAccu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/action/ActionClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/creatRDD/FromCollection$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/creatRDD/FromCollection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$10$$anonfun$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$5$$anonfun$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise$$anonfun$test02$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/Exercise.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/TestClient$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/exercise/TestClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/inputOutput/InputDemo$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/inputOutput/InputDemo$$anonfun$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/inputOutput/InputDemo$$anonfun$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/inputOutput/InputDemo$$anonfun$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/inputOutput/InputDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/inputOutput/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$1$$anonfun$apply$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$testGlom$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$testIntersection$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$testMap$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$testMap2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client$$anonfun$testReduceByKey$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-core/word-count/target/classes/com/demo/spark/core/transformation/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/数据倾斜解决方案.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/exercise/Exercise.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/exercise/Exercise.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/transformation/Client.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/transformation/Client.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree.txt" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/spark-core/word-count/target/" />
+    <ignored path="$PROJECT_DIR$/spark-core/target/" />
+    <ignored path="$PROJECT_DIR$/spark-streaming/target/" />
+    <ignored path="$PROJECT_DIR$/spark-sql/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark-core/src/main/java/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/transformation/Client.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1926">
+              <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+              <folding>
+                <element signature="e#44#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/exercise/Exercise.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/数据倾斜解决方案.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/action/ActionClient.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/creatRDD/FromCollection.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/inputOutput/InputDemo.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark-core/word-count/command.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark-sql/src/main/scala/com/demo/spark/sql/udf/UDFClient.scala">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark-sql/src/main/scala/com/demo/spark/sql/exercise/ExerciseClient.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/transformation/Client.scala" />
+        <option value="$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/exercise/Exercise.scala" />
+        <option value="$PROJECT_DIR$/数据倾斜解决方案.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1436" />
+    <option name="height" value="793" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spark-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-core" type="462c0819:PsiDirectoryNode" />
+              <item name="word-count" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-core" type="462c0819:PsiDirectoryNode" />
+              <item name="word-count" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-core" type="462c0819:PsiDirectoryNode" />
+              <item name="word-count" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-core" type="462c0819:PsiDirectoryNode" />
+              <item name="word-count" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-core" type="462c0819:PsiDirectoryNode" />
+              <item name="word-count" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-core" type="462c0819:PsiDirectoryNode" />
+              <item name="word-count" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="transformation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Client.testGlom">
+    <configuration name="Client.testCogroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="word-count" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.spark.core.transformation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demo.spark.core.transformation" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.spark.core.transformation.Client" />
+      <option name="METHOD_NAME" value="testCogroup" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client.testGlom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="word-count" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.spark.core.transformation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demo.spark.core.transformation" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.spark.core.transformation.Client" />
+      <option name="METHOD_NAME" value="testGlom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client.testPipe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="word-count" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.spark.core.transformation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demo.spark.core.transformation" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.spark.core.transformation.Client" />
+      <option name="METHOD_NAME" value="testPipe" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client.testSortBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="word-count" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.spark.core.transformation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demo.spark.core.transformation" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.spark.core.transformation.Client" />
+      <option name="METHOD_NAME" value="testSortBy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client.testSortByKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="word-count" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.spark.core.transformation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demo.spark.core.transformation" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.spark.core.transformation.Client" />
+      <option name="METHOD_NAME" value="testSortByKey" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Client.testGlom" />
+        <item itemvalue="JUnit.Client.testPipe" />
+        <item itemvalue="JUnit.Client.testCogroup" />
+        <item itemvalue="JUnit.Client.testSortBy" />
+        <item itemvalue="JUnit.Client.testSortByKey" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee782761-1206-471d-9073-e811fe6ebd39" name="Default Changelist" comment="" />
+      <created>1559552811747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559552811747</updated>
+      <workItem from="1559552813111" duration="4432000" />
+      <workItem from="1559634677512" duration="14211000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Client_testCombineByKey - 2019.06.03 at 17h 59m 11s.xml">
+      <configuration name="Client.testCombineByKey" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testCombineByKey - 2019.06.03 at 18h 03m 19s.xml">
+      <configuration name="Client.testCombineByKey" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testSortByKey - 2019.06.04 at 18h 00m 38s.xml">
+      <configuration name="Client.testSortByKey" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testSortBy - 2019.06.04 at 18h 01m 12s.xml">
+      <configuration name="Client.testSortBy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testCogroup - 2019.06.04 at 18h 02m 10s.xml">
+      <configuration name="Client.testCogroup" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testPipe - 2019.06.04 at 18h 05m 08s.xml">
+      <configuration name="Client.testPipe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testPipe - 2019.06.04 at 18h 05m 51s.xml">
+      <configuration name="Client.testPipe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testGlom - 2019.06.04 at 18h 07m 11s.xml">
+      <configuration name="Client.testGlom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testGlom - 2019.06.04 at 18h 08m 52s.xml">
+      <configuration name="Client.testGlom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testGlom - 2019.06.04 at 18h 09m 12s.xml">
+      <configuration name="Client.testGlom" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="18643000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="23" width="1436" height="877" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25035867" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5407895" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5986842" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32905984" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Tail" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.1/spark-core_2.11-2.1.1.jar!/org/apache/spark/rdd/RDD.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-core/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.1/spark-core_2.11-2.1.1-sources.jar!/org/apache/spark/rdd/RDD.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5712">
+          <caret line="377" column="50" selection-start-line="377" selection-start-column="35" selection-end-line="377" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8-sources.jar!/scala/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8-sources.jar!/scala/collection/TraversableOnce.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-sql/src/main/scala/com/demo/spark/sql/HelloWord.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-sql/src/main/scala/com/demo/spark/sql/udf/UDFClient.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-sql/src/main/scala/com/demo/spark/sql/exercise/ExerciseClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-core/word-count/command.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/action/ActionClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/creatRDD/FromCollection.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/inputOutput/InputDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-core/src/main/java/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/exercise/Exercise.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-core/word-count/src/main/scala/com/demo/spark/core/transformation/Client.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1926">
+          <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+          <folding>
+            <element signature="e#44#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数据倾斜解决方案.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

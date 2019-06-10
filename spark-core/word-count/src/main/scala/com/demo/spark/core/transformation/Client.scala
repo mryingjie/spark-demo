@@ -1,5 +1,6 @@
 package com.demo.spark.core.transformation
 
+import org.apache.spark.rdd.RDD
 import org.apache.spark.{HashPartitioner, SparkConf, SparkContext}
 import org.junit.{After, Before, Test}
 
@@ -16,14 +17,15 @@ class Client {
     */
   @Test
   def testMap(): Unit ={
-//    val res = context.parallelize(List(1,2,3,4,5,6,7,8)).map(_ + 1).collect()
-//    val res = context.parallelize(List(1,2,3,4,5,6,7,8)).flatMap(x=>Array(x+1)).collect()
+//    val res: Array[Int] = context.parallelize(List(1,2,3,4,5,6,7,8)).map(_ + 1).collect()
+//    val res: Array[Int] = context.parallelize(List(1,2,3,4,5,6,7,8)).flatMap(x=>Array(x+1)).collect()
 
     //每个分区分别执行
-//    val res = context.parallelize(List(1,2,3,4,5,6,7,8),2).mapPartitions(item => Iterator(item.map(_+1).mkString("|")))
-    val res = context.parallelize(List(1,2,3,4,5,6,7,8),2)
-                                  .mapPartitionsWithIndex((index,item)=>Iterator(index+":"+item.mkString("|")))
-                                  .collect()
+    val res: Array[Int] = context.parallelize(List(1,2,3,4,5,6,7,8),2).mapPartitions(item => Iterator(item.map(_+1).toList))
+        .flatMap(_.toIterator).collect()
+//    val res: Array[String] = context.parallelize(List(1,2,3,4,5,6,7,8),2)
+//                                  .mapPartitionsWithIndex((index,item)=>Iterator(index+":"+item.mkString("|")))
+//                                  .collect()
     res.foreach(println(_))
 
   }
@@ -56,7 +58,7 @@ class Client {
     val rdd1 =
       context.parallelize(List(1,2,3,4,5,6,7,8,4,8)).map(x =>(x,1))
 //        .reduce((x,y)=>(x._1+y._1,x._2+y._2))
-          .groupByKey().map(x=>(x._1,x._2.reduceLeft(_+_)))
+          .groupByKey().map(x=>(x._1,x._2.sum)).collect()
 //      .reduceByKey((v1,v2)=>v1+v2).collect()
 
 //     println(rdd1)
@@ -77,18 +79,23 @@ class Client {
   @Test
   def testCombineByKey(): Unit ={
     //求每个人的平均分 a , b ,代表每个人
-    val res = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
+    val res1 = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
       .combineByKey(
         (v:Int) => (v,1),
         (c:(Int,Int),v:Int) =>(c._1+v,c._2+1),
         (a:(Int,Int),b:(Int,Int)) => (a._1+b._1,a._2+b._2)
-      ).map{
-      x => x match {
-        case (name,(sum,num))=>(name,sum/num)
-      }
+      ).map {
+      case (name, (sum, num)) => (name, sum / num)
     }.collect()
 
-    println(res.mkString(","))
+    val res2 = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
+        .groupByKey()
+        .map{
+          x=>
+            (x._1,x._2.sum/x._2.size)
+        }.collect()
+    println(res1.mkString(","))
+    println(res2.mkString(","))
   }
 
   /**
@@ -108,11 +115,9 @@ class Client {
       )(
         (u:(Int,Int),v)=>(u._1+v,u._2+1),
         (x:(Int,Int),y:(Int,Int))=>(x._1+y._1,x._2+y._2)
-      ).map{
-        x => x match {
-          case (name:String,(sum,num))=>(name,sum/num)
-        }
-      }.collect()
+      ).map {
+      case (name: String, (sum, num)) => (name, sum / num)
+    }.collect()
 
     println(res.mkString(","))
 
@@ -142,7 +147,7 @@ class Client {
     */
   @Test
   def testSortByKey(): Unit ={
-    val res = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
+    val res: Array[(String, Int)] = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
       .sortByKey(false).collect()
     println(res.mkString("|"))
   }
@@ -208,7 +213,7 @@ class Client {
   @Test
   def testPipe(): Unit ={
     val res = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
-      .pipe("command.sh").collect()
+      .pipe("/Users/lsjr3/IdeaProjects/fund/spark-demo/spark-core/word-count/command.sh").collect()
     println(res.mkString("|"))
   }
 
@@ -235,9 +240,9 @@ class Client {
     */
   @Test
   def testGlom(): Unit ={
-    val res = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
+    val res: Array[Array[(String, Int)]] = context.parallelize(Array(("a", 88), ("b", 95), ("a", 91), ("b", 93), ("a", 95), ("b", 98)),2)
       .glom().collect()
-    println(res.mkString("|"))
+    res.foreach(arr=>println(arr.mkString("|")))
   }
 
   /**
